@@ -9,6 +9,8 @@ var client = amazon.createClient({
   awsSecret: 'NyGWoesVO12O6Uj2kuLteaAjOJDQCdNoctgN34R2'
 })
 
+app.set('port', (process.env.PORT || 3000));
+
 app.use(express.static('app'))
 app.use('/scripts', browserify(__dirname + '/app'))
 app.get('/isbn/:isbn', function (req, res) {
@@ -25,6 +27,6 @@ app.get('/isbn/:isbn', function (req, res) {
   })
 })
 
-var server = app.listen(3000, function () {
+var server = app.listen(app.get('port'), function () {
   console.log('Example app listening at http://%s:%s', server.address().address, server.address().port)
 })
