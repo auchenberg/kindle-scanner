@@ -1,5 +1,7 @@
-body {
-  background: black;
+body,
+html {
+  background: #000;
+  overflow: hidden;
 }
 
 #interactive {
