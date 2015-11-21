@@ -86,6 +86,11 @@ $(function() {
 
       if (App.lastResult !== code) {
         App.lastResult = code;
+
+        setTimeout(function() {
+          App.lastResult = null
+        }, 10000)
+
         lookupUPC(code).then(function(data) {
 
           var kindle= data.filter(function(item) {
