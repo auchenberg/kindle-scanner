@@ -1,4 +1,4 @@
-var $ = require('jQuery')
+var $ = require('jquery')
 var Quagga = require('quagga')
 
 function lookupUPC(code) {
