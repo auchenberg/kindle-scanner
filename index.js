@@ -13,7 +13,7 @@ app.set('port', (process.env.PORT || 3000));
 
 app.use(express.static('app'))
 app.use('/scripts', browserify(__dirname + '/app'))
-app.get('/isbn/:isbn', function (req, res) {
+app.get('/api/isbn/:isbn', function (req, res) {
   client.itemLookup({
     idType: 'ISBN',
     itemId: req.params.isbn,

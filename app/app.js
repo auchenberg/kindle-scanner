@@ -2,7 +2,7 @@ var $ = require('jquery')
 var Quagga = require('quagga')
 
 function lookupUPC(code) {
-  return window.fetch(`/isbn/${code}`).then(function(response) {
+  return window.fetch(`/api/isbn/${code}`).then(function(response) {
     return response.json()
   }).then(function(data){
       return data
