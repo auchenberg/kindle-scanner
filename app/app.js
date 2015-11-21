@@ -36,10 +36,10 @@ $(function() {
             facing: "environment" // or user
           },
           area: { 
-            top: "40%",    
-            right: "10%",  
-            left: "10%",   
-            bottom: "1v0%"  
+            top: "0%",    
+            right: "0%",  
+            left: "0%",   
+            bottom: "60%"  
           },          
           singleChannel: true
         },

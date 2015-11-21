@@ -26,9 +26,19 @@ canvas {
 .barcode {
   position: absolute;
   left: 50%;
-  top: 10%;
+  top: 8%;
 
   margin-left: -20vw;
   width: 40vw;
   opacity: 0.4
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  bottom: 0;
+  right: 0;
+
+  background: #000;
 }
