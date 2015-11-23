@@ -4,9 +4,9 @@ var amazon = require('amazon-product-api')
 var browserify = require('browserify-middleware')
 
 var client = amazon.createClient({
-  awsTag: 'kennetauchen-20',
-  awsId: 'AKIAJFWZ2Z63B2GJFHRQ',
-  awsSecret: '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'
+  awsTag: process.env.awsTag,
+  awsId: process.env.awsId,
+  awsSecret: process.env.awsSecret
 })
 
 app.set('port', (process.env.PORT || 3000));
